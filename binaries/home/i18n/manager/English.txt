@@ -1,0 +1,105 @@
+[English]
+IDS_START               =&Start
+IDS_STOP                =Sto&p
+IDS_PENDING             =Pending...
+IDS_HELP_CMDLINE        =Display switches for EasyPHP.exe
+IDS_ERROR_MYSQL         =Unable to launch MySql : \n%s\n\nWould you like to launch Apache ?
+IDS_ANOTHER_APACHE_RUN  =Another Apache server is already running.
+IDS_APACHE_ALREADY_RUN  =Apache is already running.
+IDS_APACHEMSG_UNEXPECTED_END =Unexpected end of Apache !
+IDS_PORT_OCCUPE         =Apache cannot be runned : another Web server use the Web port or port is blocked by firewall.
+IDS_SERVER_RUN_ERROR    =Cannot run server : %s
+IDS_EXPERT_MODE_WARNING =Attention ! This mode allows you to modify configuration files and a bad configuration can disturb servers.\nAre you sure ?
+IDS_SWITCH_SSL          =Restart Apache ?
+IDS_NEW_EASYPHP_VERSION =A new version (%s) is available. Go to the EasyPHP website ?
+IDS_RESTART             =Restart servers
+IDS_MYSQLMSG_UNEXPECTED_END =Unexpected end of MySql !
+IDS_STATE_STARTED       =Started
+IDS_STATE_STOPPED       =Stopped
+IDS_HELPCTX_IDC_SERVICE =Apache and MySql run as servers, and are available even if no user is logged in.\nThis option is available only on NT/2K and XP Windows and if user is administrator of the computer.
+IDS_HELPCTX_NOHELP      =No help for this.
+IDS_ERROR_STOP_SERVER   =Can't stop server  : %s
+IDS_HELPCTX_IDC_CHECK_EASYPHP_VERSION=Display a dialog box if a new version of EasyPHP is available. Need an Internet connection.
+IDS_HELPCTX_IDC_CONFAUTORELOAD=Servers are automaticaly restarted if their configuration file if modified.
+IDS_HELPCTX_IDE_MYSQL_ARGUMENTS=Set execution parameters for MySql.\nIf you run MySql as service, use configuration file instead.
+IDS_HELPCTX_IDC_AUTOSERVEURSSTART=This switch allows you to run EasyPHP at Windows startup. If you run servers as services, they will be automatically run at Windows startup.
+IDS_ERROR_RESTART_SERVER=Can't restart server : %s
+IDS_ERROR_INSTALL_SERVICE=Can't install service: %s
+IDS_HELPCTX_IDC_STATUS_APACHE=Apache state
+IDS_HELPCTX_IDC_STATUS_MYSQL=MySql  state
+IDS_HELPCTX_ID_PIN      =Always show this dialog.
+IDS_HELPCTX_ID_HELP_CONTEXT=Display help
+IDS_HELPCTX_IDSL_VIEW   =Minimize/maximize the window
+IDS_LOG_RESTART_SERVERS =Servers are restarting...
+IDS_ERROR_APACHE_CONF   =Error in Apache configuration file:\n\n""%s""\n\nEdit ?
+IDS_LOG_CHANGE_CONF     =Configuration file changed
+IDS_LOG_START_SERVERS   =Servers starting
+IDS_NOT_ADMIN           =You're not administrator : some actions will not be available.\n\nContinue ?
+IDS_ERROR_BROWSER       =Can't launch browser : copy this address in your favorite browser : ""%s"".\n(to correct this error, define a default browser)
+IDS_ERROR_REMOVE_SERVICE=Can't uninstall service : %s
+IDS_STARTPHP_URL		=http://www.php.net/
+
+#Menu server
+IDS_SERVER_RESTART		=&Restart
+IDS_SERVER_KILL			=&Kill
+#dialog about
+IDS_ABOUT_TITLE			=About EasyPHP
+IDS_ABOUT_PRESENTATION	=EasyPHP, an easy way to install Apache, MySql and PHP has been created by :
+IDS_ABOUT_VISIT_SITE	=For informations, visit the EasyPHP home page :
+IDS_ABOUT_SEE_LICENCE	=&View licence
+IDS_ABOUT_CHECK_VERSION	=Check version
+
+IDS_MAIN_STATUS      		=Status
+IDS_MAIN_CHECK_WINDOWSTART	=&Start on session startup.
+IDS_MAIN_SERVICE          	=St&art Apache and MySql as services (administrator only)           
+IDS_MAIN_AUTOSERVEURSSTART  =&Launch servers when the application start
+IDS_MAIN_CHECK_EASYPHP_VERSION_AT_STARTUP=&Check version at startup
+IDS_MAIN_CONFAUTORELOAD		=&Automatic consideration of servers's configuration modification
+IDS_MAIN_MYSQL_ARGUMENTS	=MySql arguments
+IDS_MAIN_APPLIQUER			=A&pply
+IDS_MAIN_FERMER				=&Close
+IDS_MAIN_ABOUT				=&Info...
+
+IDS_MENU_HELP				=&Help
+IDS_MENU_LOGFILES      		=&Log Files
+IDS_MENU_CONFIGURATION 		=&Configuration
+IDS_MENU_EXPLORE       		=&Explore
+IDS_MENU_ADMINISTRATION		=&Administration
+IDS_MENU_WEBLOCAL      		=Local &Web
+IDS_MENU_QUIT				=&Exit
+
+IDS_MENU_HELP_INTRODUCTION	=&Introduction
+IDS_MENU_HELP_STARTPHP		=&Start with PHP
+IDS_MENU_HELP_FAQ			=&FAQ
+IDS_MENU_LOGFILES_APACHE_ERR=&Apache Error
+IDS_MENU_LOGFILES_APACHE_ACCESS=Apache A&cces
+IDS_MENU_LOGFILES_MYSQLERR	=&MySql Error
+IDS_MENU_CONFIGURATION_EXTENSIONSPHP=PHP &Extension
+# choose one language that exists in mysql\share directory !
+IDS_MYSQL_LANGUAGE			=english
+
+IDS_LOG_STOP_SERVERS		=Stop the servers
+IDS_EXT_ERROR_DEPENDANCE	=Extensions in red can't be used because they have dependancy problems.\nCheck these extensions installation guide.
+IDS_CONF_CHECK_SERVERS_PORT	=Check server's TCP port before starting
+IDS_CONF_LANGUAGE			=Language
+IDS_CONF_PREFERENCES		=Configuration
+
+IDS_UPDATE_FILE         	=File
+IDS_UPDATE_CURRENT_VERSION 	=Current
+IDS_UPDATE_NEW_VERSION  	=New
+IDS_UPDATE_FILE_SIZE    	=Size
+IDS_UPDATE_FILE_HASH    	=Hash
+IDS_UPDATE_WEB_FILE_ERROR 	=ERROR : Can't retreive upgrade data from Web
+IDS_UPDATE_HASH_DATA_ERROR 	=ERROR : Can't retreive hash data from Web
+IDS_UPDATE_UP_TO_DATE   	=All files are already up to date
+IDS_UPDATE_UPDATING     	=Updating "%s"...
+IDS_UPDATE_BAD_HASH     	=Bad Hash for  "%s"\n%s\nshould be\n%s
+IDS_UPDATE_FILE_ERROR   	=Error upgrading "%s" : %d !
+IDS_UPDATE_NEED_RESTART 	=Relaunch EasyPHP to finish the upgrade.\nRestart now ?
+IDS_REMOVABLE_DRIVE     	=You're running EasyPHP from a removable drive. Do you want to regenerate conf files before running servers ?
+IDS_PORT_OCCUPE_XP			=%s port (%d) is already used by another application ! Close this application and try to run again the server. To close this application : open <easyphp folder>/binaries/tools/cports/cports.exe, find the line with the port already used in the column "Local Port", right click and choose "Kill Processes Of Selected Ports".
+IDS_FOLDER_CHANGED			=EasyPHP move from "%s" to "%s" folder.\nRegenerate configuration files ?
+IDS_PROMPT_QUIT				=Do you really want to quit EasyPHP ?
+IDS_ALWAYS_VISIBLE			=Always visible
+IDS_USB_REMOVED_QUIT		=USB key removed, EasyPHP will end
+[/English]

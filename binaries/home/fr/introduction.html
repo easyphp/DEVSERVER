@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<link rel="shortcut icon" href="../images_easyphp/easyphp_favicon.ico" />
+<title>DevServer - Introduction</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../styles.css" type="text/css" />
+</head>
+
+<body>
+
+<div id="top">
+	<div class="container">
+		<img src="../images_easyphp/top_title.png" width="226" height="40" alt="EasyPHP" border="0" style="float:left;" />
+		<a href="index.html"><img src="../images_easyphp/top_section_in.gif" width="11" height="7" alt=">" border="0" />aide</a>
+		<a href="introduction.html"><img src="../images_easyphp/top_section_in.gif" width="11" height="7" alt=">" border="0" />introduction</a>
+		<a href="support.html"><img src="../images_easyphp/top_section_in.gif" width="11" height="7" alt=">" border="0" />support</a>
+		<a href="http://www.easyphp.org"><img src="../images_easyphp/top_section_out.gif" width="11" height="7" alt=">" border="0" />www.easyphp.org</a>
+		<div style="clear:both;"></div>
+	</div>
+</div>
+
+<div id="body">
+	<div class="container">
+		<h1 class="help_title">INTRODUCTION</h1>
+		<br style="clear:both;" />
+		<div class="box_body">
+			<div class="content">
+				
+					<h2>Installer EasyPHP</h2>
+					<ul>
+					<li>Télécharger EasyPHP sur le site <a href="http://www.easyphp.org">www.easyphp.org</a></li>
+					<li>Double cliquer sur l'executable téléchargé</li>
+					<li>Sélectionner le répertoire d'installation et suivre la procédure</li>
+					</ul>
+					
+					<h2>Lancer EasyPHP</h2>
+					<p>
+					<img src="../images_easyphp/menu.gif" width="135" height="186" alt="menu" style="float:right;padding:0px;margin:0px 15px 0px 0px;" />
+					<img src="../images_easyphp/systray.gif" width="100" height="37" alt="systray" style="float:right;padding:0px;margin:0px 15px 0px 10px;" /> 								
+					On ne peut pas à proprement parler du lancement d'EasyPHP, il s'agit en fait de la mise en route du serveur Apache et de MySQL. A l'installation, un raccourci vers EasyPHP est créé dans le répertoire "Démarrer/Programmes/EasyPHP". Une fois EasyPHP lancé, une icône se place à côté de l'horloge [1].
+					</p>
+					Un clic droit permet d'accéder à différents menus [2]:<ul>
+					<li>Aide : aide d'EasyPHP</li>
+					<li>Fichiers Log : renvoie aux erreurs générées par Apache, MySQL et EasyPHP</li>
+					<li>Configuration : donne accès aux différents outils de configuration</li>
+					<li>Explorer : ouvre le répertoire "localweb" via l'explorateur Windows</li>
+					<li>Administration : ouvre la page d'administration</li>
+					<li>Web local : ouvre le web local</li>
+					<li>Redémarrer : redémarre Apache et MySQL</li>
+					<li>Démarrer/Arrêter : démarre/arrête Apache et MySQL</li>
+					<li>Quitter : ferme EasyPHP</li>
+					</ul>
+					
+					<h2>Utiliser le répertoire "localweb" ou les alias</h2>
+					<p>
+					Pour que vos pages PHP soient interprétées, il est impératif de placer vos fichiers dans le répertoire "localweb" ou dans un alias que vous avez créé. Pour visualiser vos pages il vous suffit alors d'ouvrir le "Web local" ou d'accéder à vos alias via la page d'"Administration".
+					</p>
+
+					<h2>Vos premières pages en PHP</h2>
+					<p>
+					Il existe autant de façon de programmer en PHP qu'il existe d'éditeurs spécialisés ou non (éditeurs html, coloration synthaxique, saisie semi-automatique ...). Nous allons, dans cet exemple, utiliser un simple éditeur de texte.
+					</p>
+					<p>
+					<img src="../images_easyphp/num_1.gif" width="14" height="18" alt="1." style="padding:0px;margin:0px 4px 0px 0px;" />Ouvrez un nouveau fichier<br />
+					<img src="../images_easyphp/num_2.gif" width="14" height="18" alt="2." style="padding:0px;margin:0px 4px 0px 0px;" />Tapez la structure d'une page HTML vierge :<br />
+					<div class="code">
+						&lt;html&gt;<br />
+						&lt;head&gt;<br />
+						&lt;title&gt;Ma première page en PHP&lt;/title&gt;<br />
+						&lt;/head&gt;<br />
+						&lt;body&gt;<br />
+						<br />
+						&lt;/body&gt;<br />
+						&lt;/html&gt; <br />
+					</div> 
+					<img src="../images_easyphp/num_3.gif" width="14" height="18" alt="3." style="padding:0px;margin:0px 4px 0px 0px;" />L'exemple consiste à afficher la date courante. Le code PHP s'intègre directement au code HTML et commence par <?php et se termine par ?>.
+					<div class="code">
+						&lt;html&gt;<br />
+						&lt;head&gt;<br />
+						&lt;title&gt;Ma première page en PHP&lt;/title&gt;<br />
+						&lt;/head&gt;<br />
+						&lt;body&gt;<br />
+						<br />
+						Date courante : &lt;?php print(date(&quot;l F d, Y&quot;)); ?&gt;<br />
+						<br />
+						&lt;/body&gt;<br />
+						&lt;/html&gt; <br />
+					</div> 
+					<br />
+					<img src="../images_easyphp/num_4.gif" width="14" height="18" alt="4." style="padding:0px;margin:0px 4px 0px 0px;" />Enregistrement de la page.<br />
+					Créer un nouveau répertoire dans le répertoire "localweb" (ou dans un alias). Enregistrer votre première page en PHP en lui donnant l'extension suivante: .php<br />
+					Rq: s'assurer dans les options d'affichage de Windows que les extensions des fichiers dont le type est connu sont visibles.<br />
+					<br />
+					<img src="../images_easyphp/num_5.gif" width="14" height="18" alt="5." style="padding:0px;margin:0px 4px 0px 0px;" />Visualisation du résultat.<br />
+					* A NE PAS FAIRE : aller dans le répertoire "localweb" (ou dans le répertoire d'un alias) puis dans le répertoire correspondant à votre projet et double-cliquer sur votre page d'exemple. Vous obtiendrez à coup sûr une page d'erreur.<br />
+					* A FAIRE : lancer EasyPHP, ouvrir le "Web local", sélectionner votre répertoire de travail (ou un alias) puis cliquer sur "date.php". Vous obtiendrez alors une page qui vous affichera la date courante; par exemple : "Date courante : Wednesday March 22, 2013".<br />
+					<br />
+					A vous maintenant de créer vos propres développements.			</div>
+		</div>
+	</div>	
+</div>
+
+</body>
+</html>

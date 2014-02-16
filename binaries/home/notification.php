@@ -1,0 +1,1 @@
+<?php $notification = array('check_date'=>'20140116','date'=>'20140116','status'=>'0','link'=>'http://www.easyphp.org/components.php','message'=>'MAJOR UPDATE - EasyPHP DevServer 14.1 - PHP 5.5.x, 5.4.x, 5.3.x, 5.2.x and Apache 2.4.7, MySQL 5.6.15, PhpMyAdmin 4.1.4, Xdebug 2.2.3'); ?>
