@@ -1,3 +1,7 @@
-# **⚙️ DEVSERVER**
+# **📦 VIRTUAL HOSTS MANAGER**
 
-Development environment on Windows. DEVSERVER is portable, modular, fully configurable, and easy to update and customize.
+* Download : https://warehouse.easyphp.org/
+* Issues : https://github.com/easyphp/DEVSERVER/issues
+* Support : https://www.easyphp.org/support.php
+* Documentation : https://www.easyphp.org/documentation/devserver/
+
