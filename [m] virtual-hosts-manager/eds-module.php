@@ -1,6 +1,6 @@
 <?php
 /**
- * Virtual Hosts Manager for EasyPHP DevServer [ www.easyphp.org ]
+ * Virtual Hosts Manager for DevServer
  * @version  2.0
  * @author   Laurent Abbal <laurent@abbal.com>
  * @link     https://www.easyphp.org
