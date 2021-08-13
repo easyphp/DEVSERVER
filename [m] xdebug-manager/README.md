@@ -1,1 +1,0 @@
-See 'xdebug-manager' branch.
