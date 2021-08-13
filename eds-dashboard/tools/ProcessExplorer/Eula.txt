@@ -1,0 +1,19 @@
+This software is provided "as is" and use of the software is at your own risk. Sysinternals disclaims any and all warranties, whether express, implied or statutory, including, without limitation, any implied warranties of merchantability, fitness for a particular purpose or non-infringement of third-party rights. Sysinternals does not warrant that the software is free of defects.  
+
+You are allowed to use software published by Sysinternals at home or at work without paying a commercial license fee provided that you downloaded the software yourself directly from Sysinternals, and: 
+
+    * Use the software on computers for which you are the primary user; or 
+    * Use the software on computers for which there is no primary user 
+       (e.g. servers, including Terminal Servers) and you are a full-time 
+       employee of the company that owns the computer; or 
+    * Use the software on computers within your residence 
+
+A commercial license is required to use the software in any way not covered above, including for example: 
+
+    * Redistributing the software in any manner, including by computer 
+      media, a file server, an email attachment, etc. 
+    * Embedding the software in or linking it to another program including internal applications, scripts, batch files, etc.
+    * Use of the software for technical support on customer computers 
+
+Sales of commercial licenses support Sysinternals product development and assure that this Web site continues to offer valuable, up-to-date tools. Established software companies redistribute these utilities and incorporate the code into their products because this offers the potential to save significant development time. Sysinternals commercial licenses are priced according to the complexity of the licensed code and its role in the target application. If you are interested in licensing Sysinternals tools or source code for redistribution or for inclusion with or as part of a software product, please contact licensing@sysinternals.com. 
+

@@ -1,0 +1,356 @@
+/**
+ * EasyPHP Devserver: a complete development environment
+ * @author   Laurent Abbal <laurent@abbal.com>
+ * @link     http://www.easyphp.org
+ */
+
+
+body {
+  padding-top: 46px;
+}
+
+#delay {display:none;position:fixed;top:0px;left:0px;z-index:999;background-color:white;width:100%;height:100%;opacity:0.5;background-image:url('../images/loading.gif');background-repeat:no-repeat;background-position:50% 10%;}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 10px 0px 10px 10px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: none;
+}
+
+.table-hover > tbody >  tr.close_conf:hover > td,
+.table-hover > tbody >  tr.close_conf:hover > th {
+  background-color: white;
+}
+
+.list-group-item {
+	padding: 10px 15px;
+}
+
+.list-group-item a {
+  color: #555;
+  text-decoration:none;
+}
+.list-group-item .list-group-item-heading {
+  color: #333;
+}
+
+.list-group-item:hover,
+.list-group-item:focus {
+  color: #555;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+
+.list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover {
+    color: #777;
+    cursor: default;
+    background-color: #eee;
+}
+
+.menu_link{
+	color:#555555;
+}
+
+.menu_link:hover,
+.menu_link:focus {
+	color:#D43F3A;
+}
+
+.notification_bell {
+    position: relative;
+    display: block;
+    padding: 15px 0px 0px 0px;
+	color:#777777;
+}
+
+.notification_bell:hover {
+	cursor:pointer;
+	color:#c0c0c0;
+}
+
+.notification_bell:focus {
+	outline: 0;
+}
+
+.delete_alias:focus {
+	outline: 0;
+}
+
+.list_alias_name:hover {
+	color:black;
+	border-bottom: 1px black dotted;
+	cursor:pointer;
+}
+
+.list_alias_name_broken {
+	color:#e74c3c;
+}
+
+.list_alias_name_broken:hover {
+	color:#e74c3c;
+	border-bottom: 1px #e74c3c dotted;
+	cursor:pointer;
+}
+
+.list_alias_directory samp {
+	color:silver;
+	padding-left:0px;
+}
+
+.list_alias_directory samp:hover {
+	color:gray;
+	cursor:pointer;
+}
+
+
+
+.footer {margin:60px auto 0px auto;padding:20px;color:#585858;background-color:#2a2e37;-moz-border-radius:2px;-khtml-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;}
+.footer a {color:#979797}
+.footer a:hover {text-decoration:none;color:white;}
+a.facebook, a.twitter, a.googleplus, a.newsletter {margin:0px 0px 0px 1px;color:#2a2e37;font-weight:bold;-moz-border-radius:2px;-khtml-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;}
+.facebook  {padding:3px 8px 2px 8px;background-color:#627AAD;}
+.twitter  {padding:3px 8px 2px 8px;background-color:#2F99CA;}
+.googleplus  {padding:3px 6px 2px 6px;background-color:#A84B43;}
+.newsletter  {padding:3px 5px 2px 5px;background-color:#BF6217;}
+.facebook:hover, .twitter:hover, .googleplus:hover, .newsletter:hover {color:white;background-color:black;}
+
+
+.navbar-default {
+background-color: #2a2e37;
+border:none;
+}
+
+.navbar {
+padding-top:0px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: silver;
+  background-color: transparent;
+}
+
+.gototop {
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	z-index:25;
+	border-bottom:none;
+}
+
+.btn_quickstart {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #c9302c;
+}
+.btn_quickstart:hover,
+.btn_quickstart:focus,
+.btn_quickstart:active,
+.btn_quickstart.active,
+.open > .dropdown-toggle.btn_quickstart {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.btn_settings {
+  color: #fff;
+  background-color: #658100;
+  border-color: #658100;
+}
+.btn_settings:hover,
+.btn_settings:focus,
+.btn_settings:active,
+.btn_settings.active,
+.open > .dropdown-toggle.btn_settings {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.btn_help {
+  color: #fff;
+  background-color: #972638;
+  border-color: #972638;
+}
+.btn_help:hover,
+.btn_help:focus,
+.btn_help:active,
+.btn_help.active,
+.open > .dropdown-toggle.btn_help {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.alert-danger {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  color: #ffffff;
+}
+
+.alert-warning {
+    color: #895902;
+    background-color: #FBD825;
+    border-color: #EFCE1D;
+}
+.btn-primary {
+color: #ffffff;
+background-color: #2c3e50;
+border-color: #2c3e50;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+color: #ffffff;
+background-color: #1a242f;
+border-color: #161f29;
+}
+
+.btn-default {
+color: #ffffff;
+background-color: #95a5a6;
+border-color: #95a5a6;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+color: #ffffff;
+background-color: #798d8f;
+border-color: #74898a;
+}
+
+.btn-info {
+	color: #ffffff;
+	/*background-color: #3498db;*/
+	/*border-color: #3498db;*/
+	background-color: #68b3c8;
+	border-color: #68b3c8;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
+  color: #ffffff;
+  /*background-color: #217dbb;*/
+  /*border-color: #2077b2;*/
+  background-color: #3091b2;
+  border-color: #3091b2;  
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #72b590;
+    border-color: #72b590;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  color: #ffffff;
+  background-color: #629c7b;
+  border-color: #629c7b;  
+}
+
+
+.btn-danger {
+    color: #fff;
+    background-color: #f25d58;
+    border-color: #f25d58;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d9534f;  
+}
+
+.btn-xxs, .btn-group-xxs > .btn {
+padding: 2px 4px 2px 4px;
+font-size: 9px;
+border-radius: 2px;
+}
+
+.well {
+min-height: 20px;
+padding: 19px;
+margin-bottom: 20px;
+background-color: #ecf0f1;
+border: 1px solid #ecf0f1;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+.badge {
+display: inline-block;
+min-width: 10px;
+padding: 3px 7px;
+font-size: 13px;
+font-weight: bold;
+color: #ffffff;
+line-height: 1;
+vertical-align: baseline;
+white-space: nowrap;
+text-align: center;
+background-color: #2c3e50;
+border-radius: 10px;
+}
+
+.popover-title {
+text-align:center;
+}
+
+.popover pre {
+padding:10px 10px 0px 10px;
+margin:0px;
+border:none;
+background-color:white;
+}
+
+.update_popover .popover {
+	width:400px;
+}
+
+.update_popover a:focus {
+	outline: 0;
+}
+
+.update_apps:hover {
+	background-color:#f5f5f5;
+	border-radius: 5px;
+}
+
