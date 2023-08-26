@@ -1,4 +1,4 @@
-# **⚙️ DEVSERVER**
+# **⚙️ PHP DEVSERVER**
 
 * Download : https://www.easyphp.org/
 * Issues : https://github.com/easyphp/DEVSERVER/issues
